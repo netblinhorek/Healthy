@@ -30,7 +30,7 @@ public class User {
     public String getPasswordHash() { return passwordHash; }
     public void setPasswordHash(String passwordHash) { this.passwordHash = passwordHash; }
 
-    public Integer getDailyCalorieGoal() { return dailyCalorieGoal; }
+    public Integer getDailyCalorieGoal(int i) { return dailyCalorieGoal; }
     public void setDailyCalorieGoal(Integer dailyCalorieGoal) { this.dailyCalorieGoal = dailyCalorieGoal; }
 
     public LocalDateTime getCreatedAt() { return createdAt; }
