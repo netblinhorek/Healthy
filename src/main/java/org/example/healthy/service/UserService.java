@@ -17,7 +17,7 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public User createdUser(String email, String passwordHash){
+    public User createUser(String email, String passwordHash){
         User user = new User();
         user.setEmail(email);
         user.setPasswordHash(passwordHash);
