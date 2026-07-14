@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-    public class FoodService {
+public class FoodService {
 
     private final FoodItemRepository foodItemRepository;
 
@@ -46,5 +46,4 @@ import java.util.List;
     public List<FoodItem> getFoodsForUser(Long userId) {
         return foodItemRepository.findByUserIdOrUserIdIsNull(userId);
     }
-
 }
