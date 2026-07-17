@@ -6,8 +6,6 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.example.healthy.model.User;
-
 @Entity
 @Table(name = "user_meals")
 
@@ -38,10 +36,10 @@ public class UserMeal {
     public void setId(Long id) { this.id = id; }
 
     public User getUser() { return user; }
-    public void setUser(User user) { this.user = user; }
+    public void setUser(User user) { this.user = user; }  // ← ДОЛЖЕН ПРИНИМАТЬ User
 
     public LocalDate getMealDate() { return mealDate; }
-    public void setMealDate(LocalDate mealDate) { this.mealDate = mealDate; }
+    public void setMealDate(LocalDate mealDate) { this.mealDate = mealDate; }  // ← ДОЛЖЕН ПРИНИМАТЬ LocalDate
 
     public String getMealType() { return mealType; }
     public void setMealType(String mealType) { this.mealType = mealType; }
@@ -51,6 +49,6 @@ public class UserMeal {
 
     public List<MealEntry> getEntries() { return entries; }
     public void setEntries(List<MealEntry> entries) { this.entries = entries; }
-
 }
+
 
